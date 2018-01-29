@@ -1,0 +1,47 @@
+{
+  "name": "Glavtent-group",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Главтент груп",
+  "devDependencies": {
+    "autoprefixer": "6.7.x",
+    "browser-sync": "2.18.12",
+    "css-mqpacker": "^6.0.1",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-util": "^3.0.8",
+    "postcss-reporter": "^4.0.0",
+    "postcss-scss": "^1.0.2",
+    "run-sequence": "1.2.2",
+    "sass-lint": "^1.10.2",
+    "stylelint": "^7.11.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp serve",
+    "test": "editorconfig-cli"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "8.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "popper.js": "^1.12.5",
+    "rename": "^1.0.4"
+  }
+}
