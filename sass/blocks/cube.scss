@@ -1,0 +1,70 @@
+.cube-wrap{
+  perspective: 5000px;
+  perspective-origin: 50% 50%;
+  width: 100%;
+  margin-right: 100px;
+  height: 400px;
+  margin: 20px auto; 
+}
+.cube {
+  position: relative;
+  margin: 20px;
+  width: 100%;
+  height: 380px;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% 0;
+}
+
+.face {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  padding: 5px 3px;
+  color: #1F0405;
+  font-size: 16px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 2px #705E5F;
+  overflow: hidden;
+  &--front {
+    transform: translateZ(190px);
+    background-color: $white-transparent-color;
+  }
+  &--back {
+    transform: translateZ(-190px) rotateX(-180deg);
+    background-color: $white-transparent-color;
+  }
+  &--up {
+    transform: translateY(-190px) rotateX(-270deg);
+    background-color: $white-transparent-color;
+  }
+  &--down {
+    transform: translateY(190px) rotateX(-90deg);
+    background-color: $white-transparent-color;
+  }
+}
+.rotate-x {
+  animation: spinX 20s infinite linear;
+}
+
+@keyframes spinX {
+  0% {
+    transform: rotateX(0);
+  }
+  25% {
+    transform: rotateX(90deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  75%{
+    transform: rotateX(270deg);
+  }
+  100%{
+    transform: rotateX(360deg);
+  }
+}

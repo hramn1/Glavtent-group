@@ -1,0 +1,10 @@
+.tent{
+	padding:100px;
+	margin-bottom:100px;
+	max-height: 500px;
+} 
+.widget-item{
+	&__image{
+		max-width: 100%;
+	}
+}
