@@ -22,14 +22,15 @@
   left: 0;
   width: 100%;
   height: 380px;
-  padding: 5px 3px;
+  padding: 5px 13px;
   color: #1F0405;
   font-size: 16px;
   text-align: center;
   line-height: 70px;
   border-radius: 4px;
-  box-shadow: inset 0 0 0 2px #705E5F;
+  box-shadow: inset 0 0 0 2px #dddddd;
   overflow: hidden;
+  border-radius: 20px;
   &--front {
     transform: translateZ(190px);
     background-color: $white-transparent-color;
@@ -48,7 +49,7 @@
   }
 }
 .rotate-x {
-  animation: spinX 20s infinite linear;
+  animation: spinX 30s infinite linear;
 }
 
 @keyframes spinX {

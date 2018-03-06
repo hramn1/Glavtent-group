@@ -1,10 +1,21 @@
 .tent{
 	padding:100px;
-	margin-bottom:100px;
-	max-height: 500px;
+	//margin-bottom:100px;
+	border-top: solid 1px $grey-color;
+	background-color: rgb(235,235,235);
+}
+.tent-title{
+	text-align: center;
+	padding-bottom:70px;
 } 
 .widget-item{
+	border-right: 1px solid $black;
+	padding: 0 25px;
+	&__last-child{
+		border-right: 0;
+	}
 	&__image{
 		max-width: 100%;
+		border-radius:50%;
 	}
 }
