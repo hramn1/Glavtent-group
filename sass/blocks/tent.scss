@@ -1,11 +1,17 @@
 .tent{
 	padding: 20px 80px 70px;
 	border-top: solid 1px $grey-color;
+	border-bottom: solid 1px black;
 	background-color: rgb(235,235,235);
+	&__title{
+		margin-bottom: 20px;
+		margin-top: 15px;
+	}
 }
 .tent-title{
 	text-align: center;
 	padding-bottom:70px;
+	margin-top: 15px;
 } 
 .widget-item{
 	margin-top: 10px;
@@ -22,5 +28,6 @@
 	}
 	&__title{
 		margin-bottom: 10px;
+		margin-top: 15px;
 	}
 }
