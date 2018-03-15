@@ -56,6 +56,11 @@ gulp.task("symbols", function() {
   .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("video", function() {
+  return gulp.src("video/*")
+  .pipe(gulp.dest("build/video"));
+});
+
 gulp.task("html:copy", function() {
   return gulp.src("*.html")
   .pipe(gulp.dest("build"));
@@ -95,7 +100,8 @@ gulp.task("copy", function() {
     "img/**",
     "js/**",
     "css/**",
-    "*.html"
+    "*.html",
+    "video/**"
   ], {
     base: "."
   })

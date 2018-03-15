@@ -1,9 +1,18 @@
 .main-header{
-		background-image: url('/img/bg1.jpg');
 	padding:0 40px;
 	text-align: center;
-	height: 400px;
+	position: relative;
+	overflow: hidden;
+	&__video{
+		width: 100%;
+		position: absolute;
+		top:0;
+		left: 0;
+		z-index: 1;
+		background-size: cover;
+	}
 }
-.main-banner{
-
+.navbar{
+	position: relative;
+	z-index: 2;
 }
