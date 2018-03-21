@@ -3,16 +3,44 @@
 	text-align: center;
 	position: relative;
 	overflow: hidden;
+	height: 90vh;
 	&__video{
 		width: 100%;
 		position: absolute;
-		top:0;
+		top:-30px;
 		left: 0;
 		z-index: 1;
 		background-size: cover;
 	}
+	&__title{
+		max-width:700px;
+		padding: 70px 30px 10px;
+		z-index: 3;
+		position: relative;
+		margin: 20px auto;
+		color:$white;
+	}
+	&__text{
+				max-width:700px;
+		padding: 10px 30px 50px;
+		z-index: 3;
+		position: relative;
+		margin: 20px auto;
+		color:$white;
+	}
+	&::after{
+		content:"";
+		position: absolute;
+		width: 100%;
+		top:0;
+		left:0;
+		right:0;
+		bottom: 0;
+		background-color: rgba(0,0,0,.6);
+		z-index: 2;
+	}
 }
 .navbar{
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 }
