@@ -12,22 +12,4 @@
 	text-align: center;
 	padding-bottom:70px;
 	margin-top: 10px;
-} 
-.widget-item{
-	margin-top: 10px;
-	border: 1px solid $white;
-	padding: 5px;
-	border-radius:10px;
-	padding-bottom: 50px;
-	background-color: rgb(235,235,235);
-	&__image{
-		max-width: 100%;
-		width: 210px;
-
-		//border-radius:50%;
-	}
-	&__title{
-		margin-bottom: 10px;
-		margin-top: 15px;
-	}
 }

@@ -1,0 +1,19 @@
+.widget-item{
+	margin-top: 10px;
+	border: 1px solid $grey-color;
+	padding: 5px;
+	border-radius:10px;
+	padding-bottom: 50px;
+	//background-color: rgb(235,235,235);
+	text-align: center;
+	&__image{
+		max-width: 100%;
+		width: 210px;
+
+		//border-radius:50%;
+	}
+	&__title{
+		margin-bottom: 10px;
+		margin-top: 15px;
+	}
+} 
