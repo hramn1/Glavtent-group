@@ -44,3 +44,23 @@
 	position: relative;
 	z-index: 3;
 }
+.navbar-contact__phone{
+	color:$white;
+	position: relative;
+	&::before{
+		content:"";
+		display: block;
+		height: 25px;
+		position: absolute;
+		background: url(/img/phone.svg);
+		transform: rotate(95deg);
+		width: 25px;
+	}
+}
+.navbar-nav{
+	margin-left: 20px;
+}
+.nav-item{
+	text-transform: uppercase;
+	font-weight: bold;
+}
