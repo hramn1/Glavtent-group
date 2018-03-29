@@ -4,6 +4,7 @@
 	position: relative;
 	overflow: hidden;
 	height: 90vh;
+	min-height: 600px;
 	&__video{
 		width: 100%;
 		position: absolute;
@@ -17,7 +18,7 @@
 		padding: 70px 30px 10px;
 		z-index: 3;
 		position: relative;
-		margin: 20px auto;
+		margin: 70px auto 20px;
 		color:$white;
 	}
 	&__text{
@@ -27,6 +28,7 @@
 		position: relative;
 		margin: 20px auto;
 		color:$white;
+		font-size: 18px;
 	}
 	&::after{
 		content:"";
@@ -44,9 +46,17 @@
 	position: relative;
 	z-index: 3;
 }
+.navbar-contact{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	padding: 10px 25px;
+}
 .navbar-contact__phone{
 	color:$white;
 	position: relative;
+	padding: 6px 5px;
+	font-size: 16px;
 	&::before{
 		content:"";
 		display: block;
