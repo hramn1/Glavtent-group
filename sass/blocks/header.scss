@@ -46,25 +46,33 @@
 	position: relative;
 	z-index: 3;
 }
+.navbar-brand{
+	align-self:flex-start
+}
+.navbar-collapse{
+	align-self:flex-start
+}
 .navbar-contact{
 	display: flex;
 	flex-direction: column;
-	margin: 20px;
-	padding: 10px 25px;
+	margin: 0 auto 20px;
+	padding: 0 25px;
 }
 .navbar-contact__phone{
 	color:$white;
 	position: relative;
-	padding: 6px 5px;
-	font-size: 16px;
+	padding: 10px 5px;
+	font-size: 18px;
 	&::before{
 		content:"";
 		display: block;
-		height: 25px;
+		height: 20px;
 		position: absolute;
 		background: url(/img/phone.svg);
 		transform: rotate(95deg);
-		width: 25px;
+width: 20px;
+left: -24px;
+top: 10px;
 	}
 }
 .navbar-nav{

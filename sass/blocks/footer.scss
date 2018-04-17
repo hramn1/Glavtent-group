@@ -1,4 +1,10 @@
 .main-footer{
 	min-height: 400px;
 	background-color: $bg-footer;
+	padding: 20px 5px 30px;
 } 
+.menu-footer{
+		&__link{
+		color: #fdfdfd;
+	}
+}
