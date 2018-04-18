@@ -1,11 +1,12 @@
 .widget-item{
-	margin-top: 10px;
+	position: relative;
 	border: 1px solid $grey-color;
 	padding: 5px;
 	border-radius:10px;
 	padding-bottom: 50px;
 	height: 100%;
 	text-align: center;
+	overflow: hidden;
 	&__image{
 		max-width: 100%;
 		width: 210px;
@@ -16,4 +17,23 @@
 		margin-top: 15px;
 	}
 } 
-
+.widget-overlay{
+	background-color: rgba(0,0,0, 0.6);
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	right: 100%;
+	bottom:0;
+	border-radius:10px;
+	left: -100%;
+	transition: 400ms ease-out;
+	line-height: 250px;
+	& a {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+.widget-item:hover .widget-overlay{
+		left:0;
+		right: 0;
+}

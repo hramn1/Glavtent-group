@@ -1,7 +1,7 @@
 .tent{
 	padding: 20px 80px 70px;
 	border-top: solid 1px $grey-color;
-	border-bottom: solid 1px black;
+	border-bottom: solid 1px darken($grey-color, 20%);
 	background-color: rgb(235,235,235);
 	&__title{
 		margin-bottom: 20px;
