@@ -8,13 +8,36 @@
 
 }
 .textile{
+	position: relative;
 	background-color: $white;
-	padding: 40px 0 60px;
+	padding: 60px 0 80px;
 	background-image: url('/img/bg-tekstil.png');
 	background-size: cover;
+	&::after{
+		position: absolute;
+		content:"";
+		bottom:0;
+		width: 100%;
+						border: 70px solid transparent; 
+    border-right: 2000px solid #eee;
+    border-bottom: 1px solid #eee;
+right: 0;
+}
 	&-title{
 		text-align: center;
 		margin:30px auto;
+		color: $white;
+		font-weight: bold;
+	}
+	& p {
+				color: $white;
+				font-weight: bold;
+				font-size: 120%;
+				text-align: center;
+				line-height: 120%;
+				width:60%;
+				margin: 20px auto;
+
 	}
 
 } 
