@@ -2,6 +2,36 @@
 	padding: 40px 60px;
 	&__title{
 		text-align: center;
+		margin: 15px 0 20px;
 		margin-bottom: 30px;
 	}
 } 
+.features-item{
+	background-color: #bfbfbf;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+&__title{
+	background-color: #616161;
+margin: 0;
+padding: 10px 12px 22px;
+color: $white;
+position: relative;
+font-size: 140%;
+&::after{
+content: "";
+display: block;
+height: 10px;
+transform: skewY(-1.5deg);
+position: absolute;
+left: 0;
+bottom: -5px;
+width: 100%;
+background-color: #616161;
+}
+
+}
+&__text{
+	padding: 17px 22px 32px;
+}
+
+}
