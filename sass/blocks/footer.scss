@@ -5,13 +5,24 @@
 		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	}
 } 
+.menu-footer ul li {
+	padding: 5px 10px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+	display: inline-flex;
+	min-width: 45%;
+	margin: 0 20px 10px 0;
+}
 .menu-footer{
 		&__link{
 		color: #fdfdfd;
+
 	}
 }
 .footer-copyrigth{
 	color: $white;
 	padding: 20px 0;
 	border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.footer-contact{
+	color:$white;
 }
