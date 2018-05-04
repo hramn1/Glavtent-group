@@ -22,7 +22,7 @@
 						border: 70px solid transparent; 
     border-right: 2000px solid #eee;
     border-bottom: 1px solid #eee;
-right: 0;
+		right: 0;
 }
 	&-title{
 		text-align: center;
@@ -30,10 +30,10 @@ right: 0;
 		color: $white;
 		font-weight: bold;
 	}
-	& p {
-				color: $white;
+	&-text {
+				color: #232323;
 				font-weight: bold;
-				font-size: 120%;
+				font-size: 130%;
 				text-align: justify;
 				line-height: 120%;
 				width:60%;

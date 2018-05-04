@@ -25,4 +25,44 @@
 }
 .footer-contact{
 	color:$white;
+	margin: 30px auto 20px;
+	padding: 10px 10px 10px 30px;
+	font-size: 120%;
+	&__phone::before{
+		background: url(/img/phone.svg);
+		transform: rotate(95deg);
+		content: "";
+		display: block;
+		height: 20px;
+		position: absolute;
+		width: 20px;
+		left: 18px;
+	}
+	&__adress::before{
+		background: url(/img/address-card.svg);
+		content: "";
+		display: block;
+		height: 20px;
+		position: absolute;
+		width: 20px;
+		left: 18px;
+	}
+		&__time::before{
+		background: url(/img/clock.svg);
+		content: "";
+		display: block;
+		height: 20px;
+		position: absolute;
+		width: 20px;
+		left: 18px;
+	}
+		&__mail::before{
+		background: url(/img/envelope.svg);
+		content: "";
+		display: block;
+		height: 20px;
+		position: absolute;
+		width: 20px;
+		left: 18px;
+	}
 }
