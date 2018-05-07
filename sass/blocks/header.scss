@@ -4,7 +4,6 @@
 	position: relative;
 	overflow: hidden;
 	height: 90vh;
-	min-height: 600px;
 	&__video{
 		width: 100%;
 		position: absolute;
@@ -40,6 +39,21 @@
 		bottom: 0;
 		background-color: rgba(0,0,0,.6);
 		z-index: 2;
+	}
+}
+@media (max-width: $desktop) {
+	.main-header{
+		height: auto;
+		&__title{
+			padding: 40px 30px 10px;
+			margin: 50px auto 20px;
+			font-size: 150%;
+		}
+	}
+}
+@media (max-width: $tablet-sm) {
+	.main-header{
+		background-image: url('/img/bg-mobile-tent.jpeg');
 	}
 }
 .navbar{
