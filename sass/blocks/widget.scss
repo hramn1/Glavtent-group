@@ -11,6 +11,7 @@
 		max-width: 100%;
 		width: 210px;
 		height: 170px;
+		object-fit:cover;
 	}
 	&__title{
 		margin-bottom: 20px;
@@ -42,4 +43,54 @@
 	padding: 10px 12px;
 	border: 1px solid $white;
 	border-radius: 25px
+}
+.catalog .widget-item{
+	transition: 600ms;
+	& a{
+		color:#232323;
+		
+	}
+	&__title{
+		font-size: 18px;
+	}
+	&__image{
+		border-radius:50%;
+	}
+	&__desc{
+		margin: 20px 0;
+		& ul {
+			padding: 0;
+			font-size: 15px;
+		}
+	}
+	&__buy{
+		background-color: #323232;
+		color: $white;
+		padding:7px 20px;
+		border-radius: 10px;
+		display: inline-block;
+		margin: 10px auto;
+	}
+	&__rent{
+				background-color: #323232;
+		color: $white;
+		padding:7px 20px;
+		border-radius: 10px;
+		display: inline-block;
+	}
+}
+.catalog .widget-item:hover{
+	transition:600ms;
+	transform: scale(1.2);
+	background-color: $white;
+	z-index: 4;
+}
+@media (max-width: $tablet-sm) {
+  .widget-item{
+  	height: 100%;
+		&__image{
+			width: 120px;
+			height: auto;
+		}
+	}
 }

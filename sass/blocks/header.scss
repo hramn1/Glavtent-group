@@ -21,7 +21,7 @@
 		color:$white;
 	}
 	&__text{
-				max-width:700px;
+		max-width:700px;
 		padding: 10px 30px 50px;
 		z-index: 3;
 		position: relative;
@@ -54,7 +54,14 @@
 @media (max-width: $tablet-sm) {
 	.main-header{
 		background-image: url('/img/bg-mobile-tent.jpeg');
+		&__video{
+			display: none;
+		}
+		&__text{
+			font-size: 16px;
+		}
 	}
+
 }
 .navbar{
 	position: relative;
