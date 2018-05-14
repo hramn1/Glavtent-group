@@ -54,6 +54,7 @@
 @media (max-width: $tablet-sm) {
 	.main-header{
 		background-image: url('/img/bg-mobile-tent.jpeg');
+		background-size:cover;
 		&__video{
 			display: none;
 		}

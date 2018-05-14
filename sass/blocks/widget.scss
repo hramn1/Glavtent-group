@@ -63,21 +63,18 @@
 			font-size: 15px;
 		}
 	}
-	&__buy{
-		background-color: #323232;
-		color: $white;
-		padding:7px 20px;
-		border-radius: 10px;
-		display: inline-block;
-		margin: 10px auto;
-	}
-	&__rent{
-				background-color: #323232;
-		color: $white;
-		padding:7px 20px;
-		border-radius: 10px;
-		display: inline-block;
-	}
+}
+.widget-item__buy, .widget-item__rent {
+  background-color: #323232;
+  color: $white;
+  padding:7px 20px;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+  width: 70%;
+}
+.product .widget-item__buy, .product .widget-item__rent{
+  margin: 10px;
 }
 .catalog .widget-item:hover{
 	transition:600ms;
