@@ -5,7 +5,12 @@
 		margin: 15px 0 20px;
 		margin-bottom: 30px;
 	}
-} 
+}
+@media (max-width: $tablet-sm) {
+	.features {
+		padding: 30px 10px;
+	}
+}
 .features-item{
 	background-color: #bfbfbf;
 border-bottom-left-radius: 20px;
