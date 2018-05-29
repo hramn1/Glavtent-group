@@ -1,134 +1,133 @@
 .main-header{
-	padding:0 40px;
-	text-align: center;
-	position: relative;
-	overflow: hidden;
-	height: 90vh;
-	&__video{
-		width: 100%;
-		position: absolute;
-		top:-30px;
-		left: 0;
-		z-index: 1;
-		background-size: cover;
-	}
-	&__title{
-		max-width:700px;
-		padding: 70px 30px 10px;
-		z-index: 3;
-		position: relative;
-		margin: 70px auto 20px;
-		color:$white;
-	}
-	&__text{
-		max-width:700px;
-		padding: 10px 30px 50px;
-		z-index: 3;
-		position: relative;
-		margin: 20px auto;
-		color:$white;
-		font-size: 18px;
-	}
-	&::after{
-		content:"";
-		position: absolute;
-		width: 100%;
-		top:0;
-		left:0;
-		right:0;
-		bottom: 0;
-		background-color: rgba(0,0,0,.6);
-		z-index: 2;
-	}
+  padding:0 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  &__video{
+    width: 100%;
+    position: absolute;
+    top:-30px;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+  }
+  &__title{
+    max-width:700px;
+    padding: 70px 30px 10px;
+    z-index: 3;
+    position: relative;
+    margin: 70px auto 20px;
+    color:$white;
+  }
+  &__text{
+    max-width:700px;
+    padding: 10px 30px 50px;
+    z-index: 3;
+    position: relative;
+    margin: 20px auto;
+    color:$white;
+    font-size: 18px;
+  }
+  &::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 2;
+  }
 }
 @media (max-width: $desktop) {
-	.main-header{
-		height: auto;
-		&__title{
-			padding: 40px 30px 10px;
-			margin: 50px auto 20px;
-			font-size: 150%;
-		}
-	}
+  .main-header{
+    height: auto;
+    &__title{
+      padding: 40px 30px 10px;
+      margin: 50px auto 20px;
+      font-size: 150%;
+    }
+  }
 }
 @media (max-width: $tablet-sm) {
-	.main-header{
-		background-image: url('/img/bg-mobile-tent.jpeg');
-		background-size:cover;
-		&__video{
-			display: none;
-		}
-		&__text{
-			font-size: 16px;
-		}
-	}
-
+  .main-header{
+    background-image: url('/img/bg-mobile-tent.jpeg');
+    background-size:cover;
+    &__video{
+      display: none;
+    }
+    &__text{
+      font-size: 16px;
+    }
+  }
 }
 .navbar{
-	position: relative;
-	z-index: 3;
+  position: relative;
+  z-index: 3;
 }
 .navbar-brand{
-	align-self:flex-start;
-	font-weight: 700;
-	font-size: 170%;
+  align-self:flex-start;
+  font-weight: 700;
+  font-size: 170%;
   font-family: 'Sedgwick Ave Display', cursive;
-	margin: 20px 5px 5px;
+  margin: 20px 5px 5px;
 }
 .navbar-dark .navbar-brand:hover{
-	color: rgba(2, 136, 209, 1);
+  color: rgba(2, 136, 209, 1);
 }
 .navbar-collapse{
-	align-self:flex-start;
+  align-self:flex-start;
 }
 .navbar-contact{
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto 20px;
-	padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 20px;
+  padding: 0 25px;
 }
 .navbar-contact__phone{
-	color:$white;
-	position: relative;
-	padding: 10px 5px;
-	font-size: 18px;
-	&::before{
-		content:"";
-		display: block;
-		height: 20px;
-		position: absolute;
-		background: url(/img/phone.svg);
-		transform: rotate(95deg);
-		width: 20px;
-		left: -24px;
-		top: 10px;
-	}
+  color:$white;
+  position: relative;
+  padding: 10px 5px;
+  font-size: 18px;
+  &::before{
+  content:"";
+  display: block;
+  height: 20px;
+  position: absolute;
+  background: url(/img/phone.svg);
+  transform: rotate(95deg);
+  width: 20px;
+  left: -24px;
+  top: 10px;
+  }
 }
-	.navbar-contact__email{
-	color:$white;
-	position: relative;
-	padding: 10px 5px;
-	font-size: 18px;
-	&::before{
-		content:"";
-		display: block;
-		height: 20px;
-		position: absolute;
-		background: url(/img/envelope.svg);
-width: 20px;
-left: -24px;
-top: 10px;
-	}
+.navbar-contact__email{
+  color:$white;
+  position: relative;
+  padding: 10px 5px;
+  font-size: 18px;
+  &::before{
+  content:"";
+  display: block;
+  height: 20px;
+  position: absolute;
+  background: url(/img/envelope.svg);
+  width: 20px;
+  left: -24px;
+  top: 10px;
+  }
 }
 
 .navbar-nav{
-	margin-left: 20px;
+  margin-left: 20px;
 }
 .nav-item{
-	text-transform: uppercase;
-	font-weight: bold;
-	margin: 20px 5px 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px 5px 5px;
 }
 .inner-header{
-	background-color: #323232;
+  background-color: #323232;
 }
