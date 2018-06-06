@@ -1,54 +1,53 @@
 .fences{
-	background-color: $white;
-	padding: 40px 0 90px;
-	&-title{
-		text-align: center;
-		margin:30px auto;
-	}
-
+  background-color: $white;
+  padding: 40px 0 90px;
+  &-title{
+    text-align: center;
+    margin:30px auto;
+  }
 }
 .textile{
-	position: relative;
-	background-color: $white;
-	padding: 60px 0 120px;
-	text-align: center;
-	background-image: url('/img/bg-tekstil.png');
-	background-size: cover;
-	&::after{
-		position: absolute;
-		content:"";
-		bottom:0;
-		width: 100%;
-						border: 70px solid transparent; 
+  position: relative;
+  background-color: $white;
+  padding: 60px 0 120px;
+  text-align: center;
+  background-image: url('/img/bg-tekstil.png');
+  background-size: cover;
+  &::after{
+    position: absolute;
+    content:"";
+    bottom:0;
+    width: 100%;
+    border: 70px solid transparent;
     border-right: 2000px solid #eee;
     border-bottom: 1px solid #eee;
-		right: 0;
-}
-	&-title{
-		text-align: center;
-		margin:30px auto;
-		color: $white;
-		font-weight: bold;
-	}
-	&-text {
-				color: #232323;
-				font-weight: bold;
-				font-size: 130%;
-				text-align: justify;
-				line-height: 120%;
-				width:60%;
-				margin: 20px auto;
-
-	}
+    right: 0;
+  }
+  &-title{
+    text-align: center;
+    margin:30px auto;
+    color: $white;
+    font-weight: bold;
+  }
+  &-text {
+    color: $white;
+    text-shadow: 1px 1px 2px #232323;
+    font-weight: bold;
+    font-size: 130%;
+    text-align: justify;
+    line-height: 120%;
+    width:60%;
+    margin: 20px auto;
+  }
 }
 @media (max-width: $tablet-sm) {
-	.textile-text{
-		width: 100%;
-	}
+  .textile-text{
+    width: 100%;
+  }
 }
 .fences .widget-item{
-	box-shadow: 0px 7px 13px -10px;
+  box-shadow: 0 7px 13px -10px;
 }
 .btn--textile{
-	margin: 0 auto;
+  margin: 0 auto;
 }

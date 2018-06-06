@@ -1,7 +1,10 @@
 .about{
 	padding: 60px 5px 80px;
-	background-color: #fff;
+	background-color: $white;
 	&__title{
 		text-align: center;
+	}
+	&__text{
+		font-size: 15px;
 	}
 } 
